@@ -2,88 +2,65 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Trabajo Practico N°3</title>
-	<style>
-		body {
-			background-color: #333;
-			color: #fff;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-
-		a {
-			color: #fff;
-			text-decoration: none;
-		}
-
-		a:visited {
-			color: yellow;
-		}
-
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-
-		th,
-		td {
-			border: 1px solid #ddd;
-			padding: 8px;
-			text-align: left;
-		}
-	</style>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../static/css/estilos.css">
+<title>Trabajo Practico N°3</title>
 </head>
 
 <body>
 
-	<header>
+	<header id="encabezado">
 		<h1>¡Bienvenido a mi primera Página Web!</h1>
-		<nav>
+		<nav class="menu-de-navegacion">
 			<ul>
-				<li><a href="#seccion1">HTML</a></li>
-				<li><a href="#seccion2">CSS</a></li>
-				<li><a href="#seccion3">JavaScript</a></li>
+				<li><a href="#seccion1" class="nav-link">HTML</a></li>
+				<li><a href="#seccion2" class="nav-link">CSS</a></li>
+				<li><a href="#seccion3" class="nav-link">JavaScript</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
-		<section id="seccion1">
-			<h2>HTML</h2>
-			<img src="imagenes/html5.png" alt="HTML 5 logo" width="300">
-			<p> HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas web. Es
-				un lenguaje de marcado que utiliza etiquetas para definir la estructura y el contenido de una página
-				web. Estas etiquetas permiten al navegador interpretar y mostrar correctamente el texto, imágenes,
-				enlaces, formularios y otros elementos que componen una página web. HTML proporciona una estructura
-				básica que se complementa con otros lenguajes como CSS para el diseño visual y JavaScript para la
-				interactividad, permitiendo así la creación de páginas web dinámicas y atractivas.</p>
-			<h3>Datos interesantes sobre HTML:</h3>
+	<main class="contenido-principal">
+		<section class="seccion" id="seccion1">
+			<h2 class="subtitulo-seccion">HTML</h2>
+			<img src="imagenes/html5.png" alt="HTML 5 logo" width="300" class="imagen">
+			<p>HTML (HyperText Markup Language) es el lenguaje estándar
+				utilizado para crear y diseñar páginas web. Es un lenguaje de
+				marcado que utiliza etiquetas para definir la estructura y el
+				contenido de una página web. Estas etiquetas permiten al navegador
+				interpretar y mostrar correctamente el texto, imágenes, enlaces,
+				formularios y otros elementos que componen una página web. HTML
+				proporciona una estructura básica que se complementa con otros
+				lenguajes como CSS para el diseño visual y JavaScript para la
+				interactividad, permitiendo así la creación de páginas web dinámicas
+				y atractivas.</p>
+			<h3 class="subtitulo-secundario-seccion">Datos interesantes
+				sobre HTML:</h3>
 			<p></p>
 			<ul>
 				<li>
-					<p>
-						HTML (HyperText Markup Language) no es un lenguaje de programación en sí mismo, sino un lenguaje
-						de marcado que se utiliza para estructurar el contenido de una página web. Utiliza etiquetas
-						para definir diferentes elementos, como encabezados, párrafos, enlaces e imágenes.
-					</p>
+					<p>HTML (HyperText Markup Language) no es un lenguaje de
+						programación en sí mismo, sino un lenguaje de marcado que se
+						utiliza para estructurar el contenido de una página web. Utiliza
+						etiquetas para definir diferentes elementos, como encabezados,
+						párrafos, enlaces e imágenes.</p>
 				</li>
 				<li>
-					<p> La versión más reciente de HTML es HTML5, que introdujo una serie de nuevas características y
-						mejoras, como soporte para audio y video nativo, elementos semánticos como
-						&lt;header>, &lt;footer>, &lt;nav> y &lt;article>, así como capacidades para desarrollo de
-						aplicaciones web más
-						sofisticadas.</p>
+					<p>La versión más reciente de HTML es HTML5, que introdujo una
+						serie de nuevas características y mejoras, como soporte para audio
+						y video nativo, elementos semánticos como &lt;header>,
+						&lt;footer>, &lt;nav> y &lt;article>, así como capacidades para
+						desarrollo de aplicaciones web más sofisticadas.</p>
 				</li>
 				<li>
-					<p>
-						HTML ha experimentado una evolución constante desde su creación en la década de 1990. Aunque la
-						versión más reciente es HTML5, el Consorcio World Wide Web (W3C) continúa trabajando en nuevas
-						versiones y especificaciones para mejorar y expandir las capacidades del lenguaje.
-					</p>
+					<p>HTML ha experimentado una evolución constante desde su
+						creación en la década de 1990. Aunque la versión más reciente es
+						HTML5, el Consorcio World Wide Web (W3C) continúa trabajando en
+						nuevas versiones y especificaciones para mejorar y expandir las
+						capacidades del lenguaje.</p>
 				</li>
 			</ul>
-			<table>
-				<tr>Cuadro comparativo entre HTML y HTML5</tr>
+			<table class="tabla">
 				<tr>
 					<th>Caracteristicas</th>
 					<th>HTML</th>
@@ -91,98 +68,105 @@
 				</tr>
 				<tr>
 					<td>Version</td>
-					<td> HTML 4.01, XHTML 1.0, XHTML 1.1</td>
+					<td>HTML 4.01, XHTML 1.0, XHTML 1.1</td>
 					<td>HTML5</td>
 				</tr>
 				<tr>
 					<td>Etiquetas estructurales</td>
-					<td> No hay etiquetas específicas para estructurar el contenido de manera semántica.</td>
-					<td> Introduce nuevas etiquetas semánticas como &lt;header>, &lt;footer>, &lt;nav>, &lt;article>,
-						&lt;section>,
-						&lt;aside>, &lt;main>, etc., que facilitan la definición de la estructura del
-						contenido.
-					</td>
+					<td>No hay etiquetas específicas para estructurar el contenido
+						de manera semántica.</td>
+					<td>Introduce nuevas etiquetas semánticas como &lt;header>,
+						&lt;footer>, &lt;nav>, &lt;article>, &lt;section>, &lt;aside>,
+						&lt;main>, etc., que facilitan la definición de la estructura del
+						contenido.</td>
 				</tr>
 				<tr>
 					<td>Soporte para multimedia</td>
-					<td> Limitado. Se depende de tecnologías externas como Flash para reproducir audio y video.</td>
-					<td> Introduce elementos &lt;audio> y &lt;video> que permiten la reproducción de contenido
-						multimedia sin
-						necesidad de plugins externos.</td>
+					<td>Limitado. Se depende de tecnologías externas como Flash
+						para reproducir audio y video.</td>
+					<td>Introduce elementos &lt;audio> y &lt;video> que permiten
+						la reproducción de contenido multimedia sin necesidad de plugins
+						externos.</td>
 				</tr>
 				<tr>
 					<td>Formularios</td>
-					<td> Los formularios son básicos y su validación debe hacerse mediante JavaScript o procesamiento en
-						el servidor.</td>
-					<td> Introduce nuevos tipos de entrada como &lt;input type="email">, &lt;input type="url">,
-						&lt;input
-						type="date">, etc., y atributos de validación como required, pattern, min, max, etc., que
-						facilitan la validación del formulario en el lado del cliente.</td>
+					<td>Los formularios son básicos y su validación debe hacerse
+						mediante JavaScript o procesamiento en el servidor.</td>
+					<td>Introduce nuevos tipos de entrada como &lt;input
+						type="email">, &lt;input type="url">, &lt;input type="date">,
+						etc., y atributos de validación como required, pattern, min, max,
+						etc., que facilitan la validación del formulario en el lado del
+						cliente.</td>
 				</tr>
 				<tr>
 					<td>APIs y funcionalidades</td>
-					<td> Limitadas. Se depende en gran medida de tecnologías de terceros y scripts adicionales para
-						funcionalidades avanzadas.</td>
-					<td> Introduce una amplia gama de APIs integradas, como la API de Geolocalización, la API de
-						Almacenamiento Web, la API de Historial de Navegación, la API de Canvas, la API de Web Workers,
-						la API de WebGL, etc., que permiten el desarrollo de aplicaciones web avanzadas y ricas en
-						funcionalidades.</td>
+					<td>Limitadas. Se depende en gran medida de tecnologías de
+						terceros y scripts adicionales para funcionalidades avanzadas.</td>
+					<td>Introduce una amplia gama de APIs integradas, como la API
+						de Geolocalización, la API de Almacenamiento Web, la API de
+						Historial de Navegación, la API de Canvas, la API de Web Workers,
+						la API de WebGL, etc., que permiten el desarrollo de aplicaciones
+						web avanzadas y ricas en funcionalidades.</td>
 				</tr>
 				<tr>
 					<td>Compatibilidad con Navegadores</td>
-					<td> Amplia compatibilidad con navegadores antiguos.</td>
-					<td> Mejora la compatibilidad con los navegadores modernos, aunque es posible que algunas
-						características no estén disponibles en navegadores más antiguos.</td>
+					<td>Amplia compatibilidad con navegadores antiguos.</td>
+					<td>Mejora la compatibilidad con los navegadores modernos,
+						aunque es posible que algunas características no estén disponibles
+						en navegadores más antiguos.</td>
 				</tr>
 				<tr>
 					<td>Semantica y accesibilidad</td>
-					<td> La semántica del contenido debe ser definida mediante convenciones de nombres y clases. La
-						accesibilidad puede ser limitada.</td>
-					<td> Mejora la semántica del contenido mediante la introducción de etiquetas semánticas específicas
-						que mejoran la estructura del documento y la accesibilidad.</td>
+					<td>La semántica del contenido debe ser definida mediante
+						convenciones de nombres y clases. La accesibilidad puede ser
+						limitada.</td>
+					<td>Mejora la semántica del contenido mediante la introducción
+						de etiquetas semánticas específicas que mejoran la estructura del
+						documento y la accesibilidad.</td>
 				</tr>
 			</table>
 		</section>
-		<section id="seccion2">
-			<h2>CSS</h2>
-			<img src="imagenes/css3.png" alt="CSS logo" width="300">
-			<p> <b>CSS (Cascading Style Sheets):</b>
-
-				CSS es un lenguaje utilizado para controlar el estilo y la presentación de páginas web. Permite definir
-				cómo se ven los elementos HTML en términos de diseño, como el color, el tamaño, la tipografía, el diseño
-				de la página y otros aspectos visuales. CSS se utiliza para separar el contenido estructural de una
-				página web de su diseño visual, lo que facilita la creación de sitios web con una apariencia consistente
-				y profesional en todas las páginas. Además, CSS permite la creación de diseños responsivos que se
-				adaptan a diferentes tamaños de pantalla y dispositivos.</p>
-			<h3>Funciones de CSS:</h3>
+		<section class="seccion" id="seccion2">
+			<h2 class="subtitulo-seccion">CSS</h2>
+			<img src="imagenes/css3.png" alt="CSS logo" width="300" class="imagen">
+			<p>
+				<b>CSS (Cascading Style Sheets):</b> CSS es un lenguaje utilizado
+				para controlar el estilo y la presentación de páginas web. Permite
+				definir cómo se ven los elementos HTML en términos de diseño, como
+				el color, el tamaño, la tipografía, el diseño de la página y otros
+				aspectos visuales. CSS se utiliza para separar el contenido
+				estructural de una página web de su diseño visual, lo que facilita
+				la creación de sitios web con una apariencia consistente y
+				profesional en todas las páginas. Además, CSS permite la creación de
+				diseños responsivos que se adaptan a diferentes tamaños de pantalla
+				y dispositivos.
+			</p>
+			<h3 class="subtitulo-secundario-seccion">Funciones de CSS:</h3>
 			<ol>
 				<li>
-					<p>
-						CSS (Cascading Style Sheets) permite separar el contenido de una página web de su diseño visual.
-						Esto facilita la creación de sitios web con un diseño consistente y modular, donde los cambios
-						en el estilo pueden aplicarse fácilmente a través de múltiples páginas.
-					</p>
+					<p>CSS (Cascading Style Sheets) permite separar el contenido de
+						una página web de su diseño visual. Esto facilita la creación de
+						sitios web con un diseño consistente y modular, donde los cambios
+						en el estilo pueden aplicarse fácilmente a través de múltiples
+						páginas.</p>
 				</li>
 				<li>
-					<p>
-						CSS ofrece una amplia gama de propiedades y técnicas para controlar el diseño y la apariencia de
-						una página web. Esto incluye la capacidad de crear diseños responsivos que se adaptan
-						automáticamente a diferentes tamaños de pantalla y dispositivos, lo que es fundamental en el
-						diseño web moderno.
-					</p>
+					<p>CSS ofrece una amplia gama de propiedades y técnicas para
+						controlar el diseño y la apariencia de una página web. Esto
+						incluye la capacidad de crear diseños responsivos que se adaptan
+						automáticamente a diferentes tamaños de pantalla y dispositivos,
+						lo que es fundamental en el diseño web moderno.</p>
 				</li>
 				<li>
-					<p>
-						Existen herramientas como Sass, Less y Stylus que extienden las capacidades de CSS al agregar
-						características como variables, mixins, funciones y anidamiento. Estos preprocesadores ayudan a
-						simplificar y organizar el código CSS, facilitando el mantenimiento y la escalabilidad de los
-						estilos.
-					</p>
+					<p>Existen herramientas como Sass, Less y Stylus que extienden
+						las capacidades de CSS al agregar características como variables,
+						mixins, funciones y anidamiento. Estos preprocesadores ayudan a
+						simplificar y organizar el código CSS, facilitando el
+						mantenimiento y la escalabilidad de los estilos.</p>
 				</li>
 			</ol>
 
-			<table>
-				<tr><b>Cuadro comparativo entre CSS y otras tecnologías similares</b></tr>
+			<table class="tabla">
 				<tr>
 					<th>Características</th>
 					<th>CSS</th>
@@ -192,100 +176,115 @@
 				</tr>
 				<tr>
 					<td>Tipo De Lenguaje</td>
-					<td> Lenguaje de estilo estándar para la web.</td>
-					<td> Preprocesador de CSS.</td>
-					<td> Preprocesador de CSS.</td>
-					<td> Preprocesador de CSS.</td>
+					<td>Lenguaje de estilo estándar para la web.</td>
+					<td>Preprocesador de CSS.</td>
+					<td>Preprocesador de CSS.</td>
+					<td>Preprocesador de CSS.</td>
 				</tr>
 				<tr>
 					<td>Implementación de Variables</td>
-					<td> No tiene soporte nativo para variables.</td>
-					<td> Soporta variables definidas con el prefijo $</td>
-					<td> Soporta variables definidas con el prefijo @</td>
-					<td> Soporta variables definidas con el prefijo $</td>
+					<td>No tiene soporte nativo para variables.</td>
+					<td>Soporta variables definidas con el prefijo $</td>
+					<td>Soporta variables definidas con el prefijo @</td>
+					<td>Soporta variables definidas con el prefijo $</td>
 				</tr>
 				<tr>
 					<td>Anidamiento</td>
-					<td> No tiene soporte para anidamiento de reglas.</td>
-					<td> Permite anidar reglas de estilo, lo que facilita la escritura y organización del código.</td>
-					<td> Permite anidar reglas de estilo, lo que ayuda a mejorar la legibilidad y la mantenibilidad del
-						código.</td>
-					<td> Permite anidar reglas de estilo y selectores, lo que simplifica la escritura y organización del
-						código.</td>
+					<td>No tiene soporte para anidamiento de reglas.</td>
+					<td>Permite anidar reglas de estilo, lo que facilita la
+						escritura y organización del código.</td>
+					<td>Permite anidar reglas de estilo, lo que ayuda a mejorar la
+						legibilidad y la mantenibilidad del código.</td>
+					<td>Permite anidar reglas de estilo y selectores, lo que
+						simplifica la escritura y organización del código.</td>
 				</tr>
 				<tr>
 					<td>Compatibilidad</td>
-					<td> Es ampliamente compatible y soportado por todos los navegadores web modernos.</td>
-					<td> Requiere compilación previa a CSS para ser interpretado por los navegadores.</td>
-					<td> Requiere compilación previa a CSS para ser interpretado por los navegadores.</td>
-					<td> Requiere compilación previa a CSS para ser interpretado por los navegadores.</td>
+					<td>Es ampliamente compatible y soportado por todos los
+						navegadores web modernos.</td>
+					<td>Requiere compilación previa a CSS para ser interpretado
+						por los navegadores.</td>
+					<td>Requiere compilación previa a CSS para ser interpretado
+						por los navegadores.</td>
+					<td>Requiere compilación previa a CSS para ser interpretado
+						por los navegadores.</td>
 				</tr>
 				<tr>
 					<td>Documentacion</td>
-					<td> Tiene una amplia comunidad de desarrolladores y una documentación extensa y actualizada.</td>
-					<td> Tiene una comunidad activa y una documentación completa que cubre todas sus características y
-						funcionalidades.</td>
-					<td> Tiene una comunidad activa y una documentación sólida, aunque puede ser menos extensa que la de
-						Sass.</td>
-					<td> Tiene una comunidad de usuarios y una documentación en constante crecimiento, pero puede ser
-						menos extensa que la de Sass y Less.</td>
+					<td>Tiene una amplia comunidad de desarrolladores y una
+						documentación extensa y actualizada.</td>
+					<td>Tiene una comunidad activa y una documentación completa
+						que cubre todas sus características y funcionalidades.</td>
+					<td>Tiene una comunidad activa y una documentación sólida,
+						aunque puede ser menos extensa que la de Sass.</td>
+					<td>Tiene una comunidad de usuarios y una documentación en
+						constante crecimiento, pero puede ser menos extensa que la de Sass
+						y Less.</td>
 				</tr>
 			</table>
 		</section>
-		<section id="seccion3">
-			<h2>JavaScript</h2>
-			<img src="imagenes/javascript.png" alt="JavaScript Logo" width="300">
-			<h3>Propositos de JavaScript:</h3>
-			<p>
-				JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos, utilizado
-				principalmente en el desarrollo web. Se utiliza para agregar interactividad y dinamismo a las páginas
-				web, permitiendo a los desarrolladores crear efectos visuales, validar formularios, manipular el
-				contenido de la página en tiempo real, interactuar con el usuario y mucho más. JavaScript es compatible
-				con la mayoría de los navegadores web modernos y es una parte fundamental del desarrollo web, junto con
-				HTML y CSS.
-			</p>
-			<table>
+		<section class="seccion" id="seccion3">
+			<h2 class="subtitulo-seccion">JavaScript</h2>
+			<img src="imagenes/javascript.png" alt="JavaScript Logo" width="300" class="imagen">
+			<h3 class="subtitulo-secundario-seccion">Propositos de
+				JavaScript:</h3>
+			<p>JavaScript es un lenguaje de programación de alto nivel,
+				interpretado y orientado a objetos, utilizado principalmente en el
+				desarrollo web. Se utiliza para agregar interactividad y dinamismo a
+				las páginas web, permitiendo a los desarrolladores crear efectos
+				visuales, validar formularios, manipular el contenido de la página
+				en tiempo real, interactuar con el usuario y mucho más. JavaScript
+				es compatible con la mayoría de los navegadores web modernos y es
+				una parte fundamental del desarrollo web, junto con HTML y CSS.</p>
+			<table class="tabla">
 				<tr>
-					<th>Lenguaje de Programacion en el Navegador: </th>
-					<th>Ecosistema Amplio: </th>
-					<th>Aplicaciones de Una Pagina: </th>
-				</tr>
+					<th>Lenguaje de Programacion en el Navegador:</th>
+					<th>Ecosistema Amplio:</th>
+					<th>Aplicaciones de Una Pagina:</th>
 				<tr>
-					<td>JavaScript es un lenguaje de programación de alto nivel que se ejecuta en el navegador web del
-						usuario. Se utiliza para agregar interactividad y dinamismo a las páginas web, permitiendo
-						acciones como la validación de formularios, la manipulación del DOM (Document Object Model) y la
-						respuesta a eventos del usuario.</td>
-					<td> JavaScript cuenta con un ecosistema rico y diverso que incluye bibliotecas y marcos de trabajo
-						populares como jQuery, React.js, AngularJS y Vue.js. Estas herramientas facilitan el desarrollo
-						de aplicaciones web complejas y optimizadas, así como la creación de interfaces de usuario
-						interactivas y receptivas.</td>
-					<td> JavaScript es fundamental para el desarrollo de aplicaciones web de una sola página (SPA),
-						donde todo el contenido se carga inicialmente y las actualizaciones subsiguientes se realizan
-						dinámicamente mediante JavaScript y tecnologías relacionadas como AJAX (Asynchronous JavaScript
-						and XML) y API de Historial del Navegador. Esto proporciona una experiencia de usuario fluida y
-						rápida, similar a la de una aplicación de escritorio.</td>
+					<td>JavaScript es un lenguaje de programación de alto nivel
+						que se ejecuta en el navegador web del usuario. Se utiliza para
+						agregar interactividad y dinamismo a las páginas web, permitiendo
+						acciones como la validación de formularios, la manipulación del
+						DOM (Document Object Model) y la respuesta a eventos del usuario.</td>
+					<td>JavaScript cuenta con un ecosistema rico y diverso que
+						incluye bibliotecas y marcos de trabajo populares como jQuery,
+						React.js, AngularJS y Vue.js. Estas herramientas facilitan el
+						desarrollo de aplicaciones web complejas y optimizadas, así como
+						la creación de interfaces de usuario interactivas y receptivas.</td>
+					<td>JavaScript es fundamental para el desarrollo de
+						aplicaciones web de una sola página (SPA), donde todo el contenido
+						se carga inicialmente y las actualizaciones subsiguientes se
+						realizan dinámicamente mediante JavaScript y tecnologías
+						relacionadas como AJAX (Asynchronous JavaScript and XML) y API de
+						Historial del Navegador. Esto proporciona una experiencia de
+						usuario fluida y rápida, similar a la de una aplicación de
+						escritorio.</td>
 				</tr>
 			</table>
 		</section>
 	</main>
 
-	<aside>
+	<aside class="contenido-adicional">
 		<h2>Contenido Adicional</h2>
-		<p>Programación estructurada: </p>
-		<a href="https://desarrolloweb.com/articulos/programacion-estructurada">
-			<img src="imagenes/programming-img.png" alt="programming-image">
+		<p>Programación estructurada:</p>
+		<a
+			href="https://desarrolloweb.com/articulos/programacion-estructurada"
+			class="link-contenido-adicional"> <img
+			src="imagenes/programming-img.png" alt="programming-image"
+			class="imagen">
 		</a>
 
 	</aside>
 
-	<footer>
+	<footer id="pie-de-pagina">
 		<address>San Salvador De Jujuy, Jujuy</address>
-		<p>Contacto: cris.escalier8100@gmail.com</p>
+		<p>Contacto: <a href="mailto:cris.escalier8100@gmail.com">cris.escalier8100@gmail.com</a></p>
 		<p>Redes sociales:</p>
-		<ul>
-			<li><a href="https://www.facebook.com/">Facebook</a></li>
-			<li><a href="https://twitter.com/">X</a></li>
-			<li><a href="https://www.instagram.com/">Instagram</a></li>
+		<ul class="redes-sociales">
+			<li><a href="https://www.facebook.com/" class="footer-link">Facebook</a></li>
+			<li><a href="https://twitter.com/" class="footer-link">X</a></li>
+			<li><a href="https://www.instagram.com/" class="footer-link">Instagram</a></li>
 		</ul>
 	</footer>
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../static/css/estilos.css">
+<title>Formulario de Cliente</title>
+</head>
+<body>
+	<header id="encabezado">
+		<h1>Formulario de Contacto</h1>
+	</header>
+	<main class="contenido-principal">
+		<form class=formulario>
+			<label for="dni">DNI (numérico):</label> <input type="number"
+				id="dni" name="dni" required> <label for="nombres">Nombres:</label>
+			<input type="text" id="nombres" name="nombres" required> <label
+				for="apellidos">Apellidos:</label> <input type="text" id="apellidos"
+				name="apellidos" required> <label for="fecha-nacimiento">Fecha
+				de nacimiento:</label> <input type="date" id="fecha-nacimiento"
+				name="fecha-nacimiento" required> <label>Género:</label>
+			<div class="genero">
+				<input type="radio" id="femenino" name="genero" value="femenino">
+				<label for="femenino">Femenino</label> <input type="radio"
+					id="masculino" name="genero" value="masculino"> <label
+					for="masculino">Masculino</label> <input type="radio" id="x"
+					name="genero" value="x"> <label for="x">X</label>
+			</div>
+
+			<label for="email">Correo electrónico:</label> <input type="email"
+				id="email" name="email" required> <label for="domicilio">Domicilio:</label>
+			<input type="text" id="domicilio" name="domicilio" required>
+
+			<label for="provincia">Provincia:</label> <select id="provincia"
+				name="provincia" required>
+				<option value="">Seleccione una provincia</option>
+				<option value="buenos_aires">Buenos Aires</option>
+				<option value="catamarca">Catamarca</option>
+				<option value="chaco">Chaco</option>
+				<option value="chubut">Chubut</option>
+				<option value="cordoba">Córdoba</option>
+				<option value="corrientes">Corrientes</option>
+				<option value="entre_rios">Entre Ríos</option>
+				<option value="formosa">Formosa</option>
+				<option value="jujuy">Jujuy</option>
+				<option value="la_pampa">La Pampa</option>
+				<option value="la_rioja">La Rioja</option>
+				<option value="mendoza">Mendoza</option>
+				<option value="misiones">Misiones</option>
+				<option value="neuquen">Neuquén</option>
+				<option value="rio_negro">Río Negro</option>
+				<option value="salta">Salta</option>
+				<option value="san_juan">San Juan</option>
+				<option value="san_luis">San Luis</option>
+				<option value="santa_cruz">Santa Cruz</option>
+				<option value="santa_fe">Santa Fe</option>
+				<option value="santiago_del_estero">Santiago del Estero</option>
+				<option value="tierra_del_fuego">Tierra del Fuego</option>
+				<option value="tucuman">Tucumán</option>
+			</select> <label for="telefono">Número de teléfono celular:</label> <input
+				type="tel" id="telefono" name="telefono"> <label>Categorías
+				de interés:</label>
+			<div class="categorias">
+				<input type="checkbox" id="categoria1" name="categorias"
+					value="tecnologia"> <label for="categoria1">Tecnología
+				</label> <input type="checkbox" id="categoria2" name="categorias"
+					value="robotica"> <label for="categoria2">Robotica
+				</label> <input type="checkbox" id="categoria3" name="categorias"
+					value="biologia"> <label for="categoria4">Biología </label>
+					<input type="checkbox" id="categoria3" name="categorias"
+					value="ciencias-sociales"> <label for="categoria5">Ciencias Sociales </label>
+					<input type="checkbox" id="categoria3" name="categorias"
+					value="cocina"> <label for="categoria6">Cocina </label>
+					<input type="checkbox" id="categoria3" name="categorias"
+					value="politica"> <label for="categoria7">Politica </label>
+					<input type="checkbox" id="categoria3" name="categorias"
+					value="mascotas"> <label for="categoria8">Mascotas </label>
+					<input type="checkbox" id="categoria3" name="categorias"
+					value="arte"> <label for="categoria9">Arte </label>
+			</div>
+
+			<label for="sugerencias">Sugerencias para la empresa:</label>
+			<textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea>
+
+			<label for="password">Password:</label> <input type="password"
+				id="password" name="password" required>
+
+			<div class="aceptacion">
+				<input type="checkbox" id="terminos" name="terminos" required>
+				<label for="terminos">Acepto los términos y condiciones</label>
+			</div>
+			<div class="mas-informacion">
+				<input type="checkbox" id="informacion" name="informacion">
+				<label for="informacion">Acepto recibir información relativa
+					a la empresa</label>
+			</div>
+
+			<button type="submit">Enviar</button>
+
+
+		</form>
+	</main>
+
+
+	<footer id="pie-de-pagina">
+		<address>San Salvador De Jujuy, Jujuy</address>
+		<p>Contacto: <a href="mailto:cris.escalier8100@gmail.com">cris.escalier8100@gmail.com</a></p>
+		<p>Redes sociales:</p>
+		<ul class="redes-sociales">
+			<li><a href="https://www.facebook.com/" class="footer-link">Facebook</a></li>
+			<li><a href="https://twitter.com/" class="footer-link">X</a></li>
+			<li><a href="https://www.instagram.com/" class="footer-link">Instagram</a></li>
+		</ul>
+	</footer>
+
+</body>
+</html>
